@@ -1,0 +1,29 @@
+{
+  "id": "18b9b080-0c06-466c-a696-11e5d20e57ec",
+  "name": "Test Automation",
+  "publisher": "Keith How",
+  "version": "1.0.0.0",
+  "brief": "Test Automation",
+  "description": "Test Automation",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "9.0"
+}
