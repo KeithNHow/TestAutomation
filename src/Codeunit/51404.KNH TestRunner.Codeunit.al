@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit 50134 "KNH TestRunner" (ID 50005).
+/// Codeunit 51404 "KNH TestRunner".
 /// </summary>
-codeunit 50134 "KNH TestRunner"
+codeunit 51404 "KNH TestRunner"
 {
     Subtype = TestRunner;
     TestIsolation = Codeunit;

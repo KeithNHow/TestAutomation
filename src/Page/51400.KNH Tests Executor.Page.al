@@ -1,7 +1,7 @@
 /// <summary>
-/// Page MyTestsExecutor (ID 50130).
+/// Page MyTestsExecutor (ID 51400).
 /// </summary>
-page 50130 "KNH Tests Executor"
+page 51400 "KNH Tests Executor"
 {
     PageType = Card;
     ApplicationArea = All;

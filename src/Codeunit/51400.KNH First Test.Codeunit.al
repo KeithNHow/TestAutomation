@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit 50130.
+/// Codeunit 51400.
 /// </summary>
-codeunit 50130 "KNH First Test"
+codeunit 51400 "KNH First Test"
 {
     Subtype = Test;
     [Test]
