@@ -1,5 +1,6 @@
 /// <summary>
 /// Codeunit 51404 "KNH TestRunner".
+/// TestRunner codeunit manages the execution of one or more test codeunits.
 /// </summary>
 codeunit 51404 "KNH TestRunner"
 {

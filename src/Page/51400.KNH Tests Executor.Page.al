@@ -51,6 +51,14 @@ page 51400 "KNH Tests Executor"
                 Image = ExecuteBatch;
                 RunObject = codeunit "KNH TestRunner";
             }
+            action(MyNormalTest)
+            {
+                Caption = 'My Normal Test Codeunit';
+                ToolTip = 'Executes My Normal Test Codeunit';
+                ApplicationArea = All;
+                Image = ExecuteBatch;
+                RunObject = codeunit "KNH My Normal Test";
+            }
         }
     }
 }

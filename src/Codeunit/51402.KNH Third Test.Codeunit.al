@@ -9,12 +9,12 @@ codeunit 51402 "KNH Third Test"
     [HandlerFunctions('MyMessageHandler')] //Pillar 3
     procedure MyHandlerFunction()
     begin
-        Message('My Handler Function');
+        Message('My Handler Function - Part 2');
     end;
 
     [MessageHandler] //Pillar 3
     procedure MyMessageHandler(Message: Text[1024])
     begin
-
+        Message('My Handler Function - Part 1');
     end;
 }

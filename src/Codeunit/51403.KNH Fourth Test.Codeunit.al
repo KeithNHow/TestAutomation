@@ -11,7 +11,7 @@ codeunit 51403 "KNH Fourth Test"
     begin
         PaymentTerms.OpenView();
         PaymentTerms.Last();
-        PaymentTerms.Code.AssertEquals('LUC'); //Pillar 2 - Last record in payment terms table is not 'Luc'
+        PaymentTerms.Code.AssertEquals('LUC'); //Pillar 2 - Pretend Last record in payment terms table is 'Luc'
         PaymentTerms.Close();
     end;
 
@@ -24,9 +24,6 @@ codeunit 51403 "KNH Fourth Test"
         PaymentTerms.Code.SetValue('LUC');
         PaymentTerms."Discount %".SetValue('56');
         PaymentTerms.Description.SetValue(PaymentTerms.Code.Value());
-        ERROR('Code: %1 \ Discount %: %2 \ Description: %3', PaymentTerms.Code.Value(),
-        PaymentTerms."Discount %".Value(),
-        PaymentTerms.Description.Value());
-        //PaymentTerms.Close();
+        Error('Code: %1 \ Discount %: %2 \ Description: %3', PaymentTerms.Code.Value(), PaymentTerms."Discount %".Value(), PaymentTerms.Description.Value());
     end;
 }
