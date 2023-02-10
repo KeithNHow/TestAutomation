@@ -21,7 +21,8 @@ codeunit 51401 "KNH Second Test"
 
     begin
         A := 1;
-        asserterror if A = 1 then //Pillar 2
+        asserterror
+        if A = 1 then //Pillar 2
             Message('Why no error')
         else
             error('This message should appear');

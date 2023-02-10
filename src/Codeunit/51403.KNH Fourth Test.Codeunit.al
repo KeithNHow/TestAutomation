@@ -27,6 +27,6 @@ codeunit 51403 "KNH Fourth Test"
         ERROR('Code: %1 \ Discount %: %2 \ Description: %3', PaymentTerms.Code.Value(),
         PaymentTerms."Discount %".Value(),
         PaymentTerms.Description.Value());
-        PaymentTerms.Close();
+        //PaymentTerms.Close();
     end;
 }
