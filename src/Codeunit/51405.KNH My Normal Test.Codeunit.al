@@ -15,8 +15,15 @@ codeunit 51405 "KNH My Normal Test"
     end;
 
     local procedure MyConfirmMessage()
+    var
     begin
-        if Dialog.Confirm('Did I do good?', false, true, false) then
-            Message('You did good!');
+        if Confirm('Did I do good?', true) then
+            Message('You did good!')
+        else
+            Message('You need to improve');
+        if StrMenu('A, B, C', 1, 'Select one of the Options') = 2 then
+            Message('You selected Option 2.')
+        else
+            Message('Option 2 not selected.');
     end;
 }
