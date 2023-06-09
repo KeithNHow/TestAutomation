@@ -4,8 +4,8 @@
 /// </summary>
 codeunit 51404 "KNH_TestRunner"
 {
-    Subtype = TestRunner;
-    TestIsolation = Codeunit;
+    Subtype = TestRunner; //options - normal, test, testrunner, upgrade, install
+    TestIsolation = Codeunit; //options - disabled, codeunit, function
 
     trigger OnRun()
     begin

@@ -11,7 +11,7 @@ codeunit 51403 "KNH_FourthTest"
     begin
         PaymentTerms.OpenView();
         PaymentTerms.Last();
-        PaymentTerms.Code.AssertEquals('LUC'); //Pillar 2 - Pretend Last record in payment terms table is 'Luc'
+        PaymentTerms.Code.AssertEquals('LUC'); //Pillar 2 - Pretend Last rec in pymt terms table is 'Luc'
         PaymentTerms.Close();
     end;
 
