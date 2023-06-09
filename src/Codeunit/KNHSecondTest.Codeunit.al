@@ -1,10 +1,10 @@
 /// <summary>
 /// Codeunit 51401.
 /// Subtype: Specifies the type of codeunit - Normal,Test,TestRunner,Upgrade,Install
-/// Test: Specifies the method is a Test method
+/// [Test]: Specifies the method is a Test method
 /// asserterror: Specifies that error should be displayed
 /// </summary>
-codeunit 51401 "KNH Second Test"
+codeunit 51401 "KNH_SecondTest"
 {
     Subtype = Test; //Pillar 1
 

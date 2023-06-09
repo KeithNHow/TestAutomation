@@ -1,9 +1,9 @@
 /// <summary>
 /// Codeunit 51400.
 /// Subtype: Specifies the type of codeunit - Normal,Test,TestRunner,Upgrade,Install
-/// Test: Specifies the method is a Test method
+/// [Test]: Specifies the method is a Test method
 /// </summary>
-codeunit 51400 "KNH First Test"
+codeunit 51400 "KNH_FirstTest"
 {
     Subtype = Test;
 

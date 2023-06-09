@@ -1,13 +1,13 @@
 /// <summary>
 /// Codeunit KNH Try Function Test (ID 51406).
 /// </summary>
-codeunit 51406 "KNH Try Function Test"
+codeunit 51406 "KNH_TryFunctionTest"
 {
     trigger OnRun()
     begin
         Result := true;
         if not TestFuncSuccess(Result) then
-            Message('Test Function Failed.')
+            Message('Test Function Failed.') //This message is displayed
         else
             Message('Test Function Successful.');
     end;

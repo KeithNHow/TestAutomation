@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit KNH My Normal Test (ID 51405).
 /// </summary>
-codeunit 51405 "KNH My Normal Test"
+codeunit 51405 "KNH_XNormalTest"
 {
     trigger OnRun()
     begin

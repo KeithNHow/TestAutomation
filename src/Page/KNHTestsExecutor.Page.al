@@ -1,7 +1,7 @@
 /// <summary>
 /// Page MyTestsExecutor (ID 51400).
 /// </summary>
-page 51400 "KNH Tests Executor"
+page 51400 "KNH_TestsExecutor"
 {
     PageType = Card;
     ApplicationArea = All;
@@ -17,7 +17,7 @@ page 51400 "KNH Tests Executor"
                 ToolTip = 'Executes My First Test Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH First Test";
+                RunObject = codeunit "KNH_FirstTest";
             }
             action(MySecondTestCodeunit)
             {
@@ -25,7 +25,7 @@ page 51400 "KNH Tests Executor"
                 ToolTip = 'Executes My Second Test Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH Second Test";
+                RunObject = codeunit "KNH_SecondTest";
             }
             action(MyThirdTestCodeunit)
             {
@@ -33,7 +33,7 @@ page 51400 "KNH Tests Executor"
                 ToolTip = 'Executes My Third Test Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH Third Test";
+                RunObject = codeunit "KNH_ThirdTest";
             }
             action(MyFourthTestCodeunit)
             {
@@ -41,7 +41,7 @@ page 51400 "KNH Tests Executor"
                 ToolTip = 'Executes My Fourth Test Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH Fourth Test";
+                RunObject = codeunit "KNH_FourthTest";
             }
             action(MyTestCodeunits)
             {
@@ -49,15 +49,15 @@ page 51400 "KNH Tests Executor"
                 ToolTip = 'Executes My Test Runner Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH TestRunner";
+                RunObject = codeunit "KNH_TestRunner";
             }
             action(MyNormalTest)
             {
                 Caption = 'My Normal Test Codeunit';
-                ToolTip = 'Executes My Normal Test Codeunit';
+                ToolTip = 'Executes a Normal Test Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH My Normal Test";
+                RunObject = codeunit "KNH_XNormalTest";
             }
         }
     }

@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit 51403.
 /// </summary>
-codeunit 51403 "KNH Fourth Test"
+codeunit 51403 "KNH_FourthTest"
 {
     Subtype = Test; //Pillar 1
     [Test] //Pillar 1
