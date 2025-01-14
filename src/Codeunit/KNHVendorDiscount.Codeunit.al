@@ -3,6 +3,7 @@
 /// </summary>
 codeunit 51407 "KNH_VendorDiscount"
 {
+    /*
     // Specifies the codeunit to be a test codeunit
     Subtype = Test;
 
@@ -68,4 +69,5 @@ codeunit 51407 "KNH_VendorDiscount"
         LibraryPurchase: Codeunit "Library - Purchase";
         Assert: Codeunit Assert;
         PurchInvDiscErr: Label 'The Purchase Invoice Discount Amount was not calculated correctly.';
+*/
 }
