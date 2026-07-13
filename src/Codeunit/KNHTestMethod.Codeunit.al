@@ -4,25 +4,19 @@
 
 namespace KNHTestAutomation;
 
-codeunit 51400 "KNH Test 1"
+codeunit 51400 "KNH Test Method"
 {
     Subtype = Test;
 
     [Test]
-    procedure MyWorkingFunction() //Func passes
+    procedure MyWorkingFunction() //Test passes and returns a message
     begin
         Message('My First Test Result');
     end;
 
     [Test]
-    procedure MyNotWorkingFunction()  //Func fails
+    procedure MyNotWorkingFunction() //Test fails and no message is returned
     begin
         Error('My Second Test Result');
-    end;
-
-    [Test]
-    procedure MyNewWorkingFunction() //Func passes
-    begin
-        Message('My Third Test Result');
     end;
 }

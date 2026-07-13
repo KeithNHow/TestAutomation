@@ -1,5 +1,4 @@
 //Permissionset TestAutomation (ID 51400).
-
 namespace KNHTestAutomation;
 
 permissionset 51400 "KNH_TestAutomation"
@@ -7,10 +6,12 @@ permissionset 51400 "KNH_TestAutomation"
     Assignable = true;
     Caption = 'Test Automation', MaxLength = 30;
     Permissions =
-        codeunit "KNH Test 1" = X,
-        codeunit "KNH Test 2" = X,
-        codeunit "KNH Test 3" = X,
-        codeunit "KNH Test 4" = X,
-        codeunit "KNH Test 5" = X,
-        page "KNH Tests Executor" = X;
+        page "KNH Tests Executor" = X,
+        codeunit "KNH AssertEquals" = X,
+        codeunit "KNH AssertError" = X,
+        codeunit "KNH Confirm Handler" = X,
+        codeunit "KNH Message Handler" = X,
+        codeunit "KNH Test Method" = X,
+        codeunit "KNH Test Run" = X,
+        codeunit "KNH TryFunction" = X;
 }

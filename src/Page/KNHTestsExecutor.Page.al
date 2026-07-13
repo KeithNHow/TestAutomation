@@ -18,7 +18,7 @@ page 51400 "KNH Tests Executor"
                 ToolTip = 'Executes My First Test Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH Test 1";
+                RunObject = codeunit "KNH Test Method";
             }
             action(MySecondTestCodeunit)
             {
@@ -26,7 +26,7 @@ page 51400 "KNH Tests Executor"
                 ToolTip = 'Executes My Second Test Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH Test 2";
+                RunObject = codeunit "KNH AssertError";
             }
             action(MyThirdTestCodeunit)
             {
@@ -34,7 +34,7 @@ page 51400 "KNH Tests Executor"
                 ToolTip = 'Executes My Third Test Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH Test 3";
+                RunObject = codeunit "KNH AssertEquals";
             }
             action(MyFourthTestCodeunit)
             {
@@ -42,15 +42,23 @@ page 51400 "KNH Tests Executor"
                 ToolTip = 'Executes My Fourth Test Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH Test 4";
+                RunObject = codeunit "KNH TryFunction";
             }
-            action(MySixthTestCodeunit)
+            action(MyFifthTestCodeunit)
             {
                 Caption = 'My Fifth Test Codeunit';
                 ToolTip = 'Executes My Fifth Test Codeunit';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH Test 5";
+                RunObject = codeunit "KNH Message Handler";
+            }
+            action(MySixthTestCodeunit)
+            {
+                Caption = 'My Sixth Test Codeunit';
+                ToolTip = 'Executes My Sixth Test Codeunit';
+                ApplicationArea = All;
+                Image = ExecuteBatch;
+                RunObject = codeunit "KNH Message Handler";
             }
             action(MyTestCodeunits)
             {

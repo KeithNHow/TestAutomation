@@ -5,27 +5,26 @@
 
 namespace KNHTestAutomation;
 
-codeunit 51401 "KNH Test 2"
+codeunit 51401 "KNH AssertError"
 {
     Subtype = Test;
 
     [Test]
-    procedure MyFirstPostiveNegativeTestFunction() //Func passes
+    procedure MyFirstPostiveNegativeTestFunction()
     begin
         asserterror
-        Error('');
+        error('Condition is false.');
     end;
 
     [Test]
-    procedure MySecondPostiveNegativeTestFunction() //Func passes
+    procedure MySecondPostiveNegativeTestFunction()
     var
         A: Integer;
     begin
-        A := 1;
+        A := 2;
         asserterror
         if A = 2 then
-            Message('Condition is true.')
-        else
-            Error('Condition is false.');
+            error('Condition is true.')
+
     end;
 }

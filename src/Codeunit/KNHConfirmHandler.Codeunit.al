@@ -1,5 +1,5 @@
 namespace KNHTestAutomation;
-codeunit 51408 "KNH Test 5"
+codeunit 51408 "KNH Confirm Handler"
 {
     Subtype = Test;
 
@@ -12,17 +12,13 @@ codeunit 51408 "KNH Test 5"
         Question := 'Do you want to continue?';
         Reply := false;
         this.MyConfirmHandler(Question, Reply);
-        if Reply then
-            Message('Reply is true')
-        else
-            Message('Reply is false'); //does not show because reply is true
     end;
 
-    [ConfirmHandler]
+    [ConfirmHandler] //ConfirmHandler method must be global. 
     procedure MyConfirmHandler(Question: Text; var Reply: Boolean) //Func passes
     begin
         Reply := true;
     end;
 
-    //Note: ConfirmHandler method must be global. 
+
 }

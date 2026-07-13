@@ -11,10 +11,11 @@ codeunit 51404 "KNH Test Run"
 
     trigger OnRun()
     begin
-        Codeunit.Run(Codeunit::"KNH Test 1");
-        Codeunit.Run(Codeunit::"KNH Test 2");
-        Codeunit.Run(Codeunit::"KNH Test 3");
-        Codeunit.Run(Codeunit::"KNH Test 4");
-        Codeunit.Run(Codeunit::"KNH Test 5");
+        Codeunit.Run(Codeunit::"KNH Test Method");
+        Codeunit.Run(Codeunit::"KNH AssertError");
+        Codeunit.Run(Codeunit::"KNH Message Handler");
+        Codeunit.Run(Codeunit::"KNH AssertEquals");
+        Codeunit.Run(Codeunit::"KNH Confirm Handler");
+        Codeunit.Run(Codeunit::"KNH TryFunction");
     end;
 }
