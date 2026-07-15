@@ -14,51 +14,59 @@ page 51400 "KNH Tests Executor"
         {
             action(MyFirstTestCodeunit)
             {
-                Caption = 'My First Test Codeunit';
-                ToolTip = 'Executes My First Test Codeunit';
+                Caption = 'My Test Method';
+                ToolTip = 'Executes My Test Method';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
                 RunObject = codeunit "KNH Test Method";
             }
             action(MySecondTestCodeunit)
             {
-                Caption = 'My Second Test Codeunit';
-                ToolTip = 'Executes My Second Test Codeunit';
+                Caption = 'My Assert Error Test';
+                ToolTip = 'Executes My Assert Error Test';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
                 RunObject = codeunit "KNH AssertError";
             }
             action(MyThirdTestCodeunit)
             {
-                Caption = 'My Third Test Codeunit';
-                ToolTip = 'Executes My Third Test Codeunit';
+                Caption = 'My Assert Equals Test';
+                ToolTip = 'Executes My Assert Equals Test';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
                 RunObject = codeunit "KNH AssertEquals";
             }
             action(MyFourthTestCodeunit)
             {
-                Caption = 'My Fourth Test Codeunit';
-                ToolTip = 'Executes My Fourth Test Codeunit';
+                Caption = 'My Try Function Test';
+                ToolTip = 'Executes My Try Function Test';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
                 RunObject = codeunit "KNH TryFunction";
             }
             action(MyFifthTestCodeunit)
             {
-                Caption = 'My Fifth Test Codeunit';
-                ToolTip = 'Executes My Fifth Test Codeunit';
+                Caption = 'My Message Handler Test';
+                ToolTip = 'Executes My Message Handler Test';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
                 RunObject = codeunit "KNH Message Handler";
             }
             action(MySixthTestCodeunit)
             {
-                Caption = 'My Sixth Test Codeunit';
-                ToolTip = 'Executes My Sixth Test Codeunit';
+                Caption = 'My Try Function Test';
+                ToolTip = 'Executes My Try Function Test';
                 ApplicationArea = All;
                 Image = ExecuteBatch;
-                RunObject = codeunit "KNH Message Handler";
+                RunObject = codeunit "KNH TryFunction";
+            }
+            action(MyCustomerTest)
+            {
+                Caption = 'My New Customer Test';
+                ToolTip = 'Executes My New Customer Test';
+                ApplicationArea = All;
+                Image = ExecuteBatch;
+                RunObject = codeunit "KNH New Customer Test";
             }
             action(MyTestCodeunits)
             {

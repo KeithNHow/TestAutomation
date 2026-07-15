@@ -17,5 +17,6 @@ codeunit 51404 "KNH Test Run"
         Codeunit.Run(Codeunit::"KNH AssertEquals");
         Codeunit.Run(Codeunit::"KNH Confirm Handler");
         Codeunit.Run(Codeunit::"KNH TryFunction");
+        Codeunit.Run(Codeunit::"KNH New Customer Test");
     end;
 }

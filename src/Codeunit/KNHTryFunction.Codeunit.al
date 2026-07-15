@@ -5,18 +5,21 @@ codeunit 51406 "KNH TryFunction"
 {
     trigger OnRun()
     var
-        Result: Boolean;
+        Test: text;
     begin
-        Result := true;
-        if this.TryFunction(Result) then
-            Message('TryFunction returned true, Result: %1', Result)
+        if this.TryFunction(Test) then
+            Message('TryFunction = %1', Test)
         else
-            Message('TryFunction returned false, Result: %1', Result);
+            Message('TryFunction = %1', Test);
     end;
 
     [TryFunction]
-    local procedure TryFunction(var Result: Boolean)
+    local procedure TryFunction(var Test: Text)
     begin
-        Result := false;
+        Test := 'Failed';
+        if Test = 'Failed' then
+            error('Test failed')
+        else
+            Test := 'Success';
     end;
 }
