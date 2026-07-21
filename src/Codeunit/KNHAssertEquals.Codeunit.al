@@ -13,8 +13,13 @@ codeunit 51403 "KNH AssertEquals"
     [Test]
     procedure MyFirstTestPageTestFunction()
     var
+        IsHandled: Boolean;
         PaymentTerms: TestPage "Payment Terms";
     begin
+        this.OnBeforeMyFirstTestPageTestFunction(PaymentTerms, IsHandled);
+        if IsHandled then
+            exit;
+
         PaymentTerms.OpenView();
         PaymentTerms.Last();
         PaymentTerms.Code.AssertEquals('COD'); //Checks whether last rec contains code value of 'COD'.
@@ -30,5 +35,10 @@ codeunit 51403 "KNH AssertEquals"
         PaymentTerms.Last();
         PaymentTerms.Code.AssertEquals('LUC'); //Checks whether last rec contains code value of 'LUC'.
         PaymentTerms.Close();
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeMyFirstTestPageTestFunction(PaymentTerms: TestPage "Payment Terms"; var IsHandled: Boolean)
+    begin
     end;
 }
